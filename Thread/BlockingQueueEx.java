@@ -9,7 +9,7 @@ public class BlockingQueueEx {
     private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
 
     public static void main(String[] args) throws InterruptedException {
-
+        //creating the new thread1
         Thread t1 = new Thread(new Runnable() {
             public void run() {
                 try {
@@ -17,7 +17,8 @@ public class BlockingQueueEx {
                 } catch (InterruptedException ignored) {}
             }
         });
-
+            
+        //creating the thread2
         Thread t2 = new Thread(new Runnable() {
             public void run() {
                 try {

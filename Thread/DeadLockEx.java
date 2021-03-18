@@ -7,6 +7,7 @@ public class DeadLockEx {
         private int index;
 
         public static void main(String[] a) {
+            //creating the two threads and starting 
             Thread t1 = new Thread1();
             Thread t2 = new Thread2();
             t1.start();

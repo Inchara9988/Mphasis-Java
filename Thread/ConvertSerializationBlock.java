@@ -7,10 +7,12 @@ import java.util.Random;
 class WorkerMethodsSynchronized {
 
     private Random random = new Random();
-
+    
+    //creating the list
     private List<Integer> list1 = new ArrayList<>();
     private List<Integer> list2 = new ArrayList<>();
 
+    //generating the getters and setters
     public Random getRandom() {
         return random;
     }
