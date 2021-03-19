@@ -1,10 +1,11 @@
-package com.mphasis.main;
+package com.mphasis.com;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapEX {
+public class HashMapExample
+ {
     public static void main(String args[]) {
 
         // Use a data structure.

@@ -2,7 +2,7 @@ package com.mphasis.main;
 
 import java.util.Arrays;
 
-public class Arrays {
+public class ArraysExample {
     public static void main(String args[]) {
 
         // Allocate and initialize array.

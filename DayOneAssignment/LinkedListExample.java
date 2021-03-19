@@ -2,7 +2,7 @@ package com.mphasis.com;
 
 import java.util.LinkedList;
 
-public class LinkedList
+public class LinkedListExample
  {
     public static void main(String args[]) {
         LinkedList<String> result = new LinkedList<String>();

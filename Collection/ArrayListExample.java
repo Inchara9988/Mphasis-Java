@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
 
-public class ArrayListEx {
+public class ArrayListExample {
     public static void main(String args[]) {
         // Create an array list.
         ArrayList<String> al = new ArrayList<String>();
