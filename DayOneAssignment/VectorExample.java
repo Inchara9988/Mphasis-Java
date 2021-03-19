@@ -3,7 +3,7 @@ package com.mphasis.com;
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class Vetor {
+public class VetorExample {
     public static void main(String args[]) {
 
         // initial size of 3 and increment of 2

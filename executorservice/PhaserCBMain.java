@@ -6,6 +6,7 @@ import java.util.concurrent.Phaser;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+//creating the class to demonstrate the phasers
 class PhaserCBTask implements Runnable{
     private final String name;
     Phaser phaser;
@@ -33,6 +34,7 @@ class PhaserCBTask implements Runnable{
     }
 }
 
+//main class for demonstrating the phasers
 public class PhaserCBMain {
 
     public static void main(String[] args) {

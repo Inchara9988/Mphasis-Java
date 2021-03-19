@@ -10,7 +10,7 @@ class Runner implements Runnable{
     }
 }
 
-
+//class to create the fixed thread pool
 public class FixedThread {
     public static void main(String[] args) {
         int coreCount=Runtime.getRuntime().availableProcessors();

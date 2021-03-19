@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
+//creating the point
 class Point{
     int x;
     int y;
 
+    //creating constructor
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
+    //creating getter and setter
     public int getX() {
         return x;
     }
@@ -39,11 +42,12 @@ class Point{
     }
 }
 
+//creating task and implementing the callable
 class Task implements Callable<Point> {
     String name;
     int x;
     int y;
-
+ 
     public Task(String name, int x, int y) {
         this.name = name;
         this.x = x;
@@ -57,6 +61,7 @@ class Task implements Callable<Point> {
     }
 }
 
+//creating the callable task
 public class CallableTask {
     public static void main(String[] args) {
         int coreCount = Runtime.getRuntime().availableProcessors();
@@ -67,6 +72,7 @@ public class CallableTask {
             Future<Point> future=service.submit(new Task("Task"+(i+1),i+1,i+2));
             allFutures.add(future);
         }
+        //loop through future
         for(Future<Point> future:allFutures){
             try {
                 System.out.println(future.get());

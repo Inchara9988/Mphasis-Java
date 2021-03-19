@@ -6,6 +6,7 @@ import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+//Mytask class which implements runnable
 class MyTask implements Runnable{
     CyclicBarrier barrier;
 
@@ -31,6 +32,8 @@ class MyTask implements Runnable{
         System.out.println("process....");
     }
 }
+
+//class which creating the cyclic barrier
 public class CyclicBarrierEx {
     public static void main(String[] args) {
         int coreCount=Runtime.getRuntime().availableProcessors();
